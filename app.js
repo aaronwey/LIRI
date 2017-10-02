@@ -1,6 +1,4 @@
-var twitKeys = require('./keys.js');
-
-var spotKeys = require('./spotKeys.js');
+var keys = require('./keys.js');
 
 var Twitter = require("twitter");
 
@@ -8,9 +6,9 @@ var request = require("request");
 
 var Spotify = require("node-spotify-api");
 
-var twitClient = new Twitter(twitKeys);
+var twitClient = new Twitter(keys.twitterKeys);
 
-var spotClient = new Spotify(spotKeys);
+var spotClient = new Spotify(keys.spotifyKeys);
 
 var fs = require("fs");
 
